@@ -1,0 +1,412 @@
+mainpage.html:
+-------------
+<!DOCTYPE html>    
+
+<!-- Step up the Page for HTML code --> 
+<html>
+
+
+<head>   <!-- Display Name on Brower Tab --> 
+<title> Traditional Chinese Food  </title>
+ <style>
+    body {
+        background-color: #9a0000;
+        color: #C8BF00;
+        font-family: courier;
+        text-align: center;
+    }
+    header {
+        font-size: 50px;
+    }
+    #line {
+        border-top: 1px solid #C8BF00;
+    }
+    nav {
+        color: #FFFFFF;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+    a {
+        color: #FFFFFF;
+    }
+    #dimsum {
+        width: 404px;
+        height: 303px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    #desc {
+        font-size: 20px;
+    }
+    footer {
+        border: 1px solid;
+        width: 500px;
+        padding: 10px 20px;
+        background: #000000;
+        color: white;
+        margin:0 auto;
+    }
+ </style>
+</head>
+
+
+<body>  <!-- Display on Webpage -->
+
+<header>Traditional Chinese Food</header>
+
+<nav>
+    <p>
+        <a href = "https://website-6339747.codehs.me/tangyuan.html" class = "link"
+            onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)">Tangyuan</a> |
+    
+        <a href = "https://website-6339747.codehs.me/tofu.html" class = "link"
+            onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)">Tofu Pudding</a>
+    </p>
+</nav>
+
+<img src= "https://s3.amazonaws.com/secretsaucefiles/photos/images/000/168/879/large/FullSizeRender.jpg?1498229535" id="dimsum">
+
+<h1 id="recipeHeader">Recipes</h1>
+<p id="desc">Food is a fundamental part of Chinese culture. Links to recipes of Chinese dishes/desserts can be found above.</p>
+
+<br><br><br>
+<hr id="line">
+<br><br><br>
+
+<footer>
+    <p id="names">Colin Moy (Period 2) and Jake Chen (Period 8)<br>3/10/2023</p>
+</footer>
+
+</body>
+
+<script type = "text/javascript">
+    function mOverLink(obj){ 
+        obj.style.background = "darkviolet"; 
+         
+    }
+    function mOutLink(obj){
+        obj.style.background = "#9a0000";
+        
+    }
+</script>
+
+</html>
+
+tangyuan.html:
+-------------
+<!DOCTYPE html>    
+
+<!-- Step up the Page for HTML code --> 
+<html>
+    <head>   <!-- Display Name on Brower Tab --> 
+        <title> APCSP Site </title>
+        <style>
+            html {
+                background-color: #9a0000;
+                color: #C8BF00;
+            }
+            header {
+                font-size: 35px;
+            }
+            .header {
+                background-color: #750000;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            nav {
+                font-size: 15px;
+            }
+            #left {
+                float: left;
+                width: 45%;
+                max-width: 400px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            #right {
+                float: left;
+                width: 45%;
+                max-width: 400px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            #img {
+                max-width: 100%;
+                border: 2px solid #000;
+            }
+            .footer {
+                color: #FFFFFF;
+                background-color: #750000;
+                text-align: center;
+                padding: 10px;
+                margin: 20px;
+            }
+            row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            div {
+                padding-top: 40px;
+                padding-right: 20px;
+                padding-bottom: 40px;
+                padding-left: 20px;
+            }
+            .info {
+                border: 3px solid #C8BF00;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            body {
+                font-family: "Monaco", monospace;
+            }
+            .link {
+                color: #FFFFFF;
+            }
+        </style>
+    </head>
+
+
+    <body>  <!-- Display on Webpage -->
+        <br>
+        <div>
+            <header class = "header">
+                <h2> Tangyuan </h2>
+            </header>
+            <br>
+            <nav class = "header">
+                <p>
+                    <a href = "https://website-6339747.codehs.me/mainpage.html" class = "link"
+                        onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)">Home</a> |
+                
+                    <a href = "https://website-6339747.codehs.me/tofu.html" class = "link"
+                        onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)">Tofu Pudding</a>
+                </p>
+                
+                
+                
+            </nav>
+            <p></p>
+            <hr>
+            <br>
+            <section>
+                <row>
+                    <section id = "left">
+                        <a href = "https://en.wikipedia.org/wiki/Tangyuan_(food)">
+                            <img src = "https://upload.wikimedia.org/wikipedia/commons/3/34/Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg"
+                                    onmouseover = "mOverImg(this)" onmouseout = "mOutImg(this)" id = "img">
+                        </a>
+                    </section>
+                    <section id = "right">
+                        <h3>
+                            Description
+                        </h3>
+                        <p>
+                            Tangyuan is a traditional Chinese dessert made of glutinous rice that is shaped into a ball and commonly served in hot broth or syrup.
+                            Sometimes, it is also filled with filling such as sesame, peanut, and sometimes even fruit. 
+                            Tangyuan is traditionally served during the Lantern Festival because its name is a homophone for the Chinese word of union.
+                        </p>
+                    </section>
+                </row>
+            </section>
+        
+            <br>
+            <hr>
+            <br>
+            <section class = "info">
+                <h3>
+                    Ingredients
+                </h3>
+                <ul>
+                    <li> <p> Glutinous sweet rice flour </p> </li>
+                    <li> <p> Sugar </p> </li>
+                    <li> <p> Butter </p> </li>
+                    <li> <p> Fillings (like sesame or peanut) </p> </li>
+                </ul>
+                <br>
+                <h3>
+                    Instructions (for sesame Tangyuan)
+                </h3>
+                <ol>
+                    <li> <p> Grind sesame seeds, then add sugar and butter to it to create a paste </p> </li>
+                    <li> <p> Stir the sweet rice flour in a bowl while slowly adding warm water </p> </li>
+                    <li> <p> Take 18 grams of dough, flatten it, and put 4 grams of of the paste in the middle. </p> </li>
+                    <li> <p> Close the dough with the filling inside, then roll it into a ball. </p></li>
+                </ol>
+                <button onclick = "window.print()">
+                    Print This Page
+                </button>
+            </section>
+            <section class = "footer">
+                <h2> Sources </h2>
+                <p> <a href = "https://en.wikipedia.org/wiki/Tangyuan_(food)"
+                        onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)"
+                        class = "link">
+                    Tangyuan (Wikipedia)
+                </a> <br> <a href = "https://thewoksoflife.com/tang-yuan-recipe/"
+                        onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)"
+                        class = "link">
+                    Tang Yuan (The Woks of Life)
+                </a> </p>
+            </section>
+            <footer class = "footer">
+                <p>
+                    Jake Chen <br>
+                    Period 8 <br>
+                    3/10/23
+                </p>
+            </footer>
+        </div>
+        <br>
+    </body>
+    <script type = "text/javascript">
+        function mOverLink(obj){ 
+            obj.style.background = "darkviolet"; 
+             
+        }
+        function mOutLink(obj){
+            obj.style.background = "#750000";
+            
+        }
+        function mOverImg(obj){ 
+            obj.style.borderRadius = "3px"; 
+            obj.style.border = "3px solid #000";
+        }
+        function mOutImg(obj){
+            obj.style.borderRadius = "1px";
+            obj.style.border = "2px solid #000";
+            
+        }
+    </script>
+</html>
+
+tofu.html:
+---------
+<!DOCTYPE html>    
+
+<!-- Step up the Page for HTML code --> 
+<html id = "webpage">
+
+<head> <!-- Display Name on Brower Tab --> 
+<style>
+    html { background-color : #9a0000 ; font-family: courier;
+        color: #C8BF00;
+    }
+    header {font-size: 150%; text-align: center;}
+    nav {
+        color: #FFFFFF;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+    a {
+        color: #FFFFFF;
+    }
+    h2 {font-size: 180%;}
+    img { border: 2px solid black; padding: 0px; text-align: center;
+        display: block; margin-left: auto; margin-right: auto;}
+    footer {
+        border: 1px solid;
+        width: 400px;
+        padding: 10px 20px;
+        background: #000000;
+        color: white;
+        margin:0 auto;
+        text-align: center;
+    }
+    hr {border-top: 2px solid #E7DC00;}
+    #container {
+    margin: auto;
+    text-align: center;
+    }
+    button {
+        margin: 10px;
+    	padding: 10px 20px;
+    	font-size: 12px;
+    	background-color: black;
+    	color: white;
+    	border: solid;
+    	border-radius: 10px;
+    	cursor: pointer;
+    }
+    button:hover {
+        background-color: #06009a;
+    }
+    footer {
+        margin-top: 200px;
+    }
+</style>
+<title> Tofu Pudding  </title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>  <!-- Display on Webpage -->
+<header>
+    <h1>Tofu Pudding</h1>
+</header>
+
+<nav>
+    <p>
+        <a href = "https://website-6339747.codehs.me/mainpage.html" class = "link"
+            onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)">Home</a> |
+    
+        <a href = "https://website-6339747.codehs.me/tangyuan.html" class = "link"
+            onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)">Tangyuan</a>
+    </p>
+</nav>
+
+<section id = "container">
+    <img src = "https://www.pressurecookrecipes.com/wp-content/uploads/2018/04/instant-pot-tofu-pudding-recipe-1.jpg" id = 'myImage' height = "240">
+    <button onclick="document.getElementById('myImage').src='https://www.pressurecookrecipes.com/wp-content/uploads/2018/04/instant-pot-tofu-pudding-recipe-1.jpg'"> Previous image  </button>
+    <button onclick="document.getElementById('myImage').src='https://th.bing.com/th/id/OIP.hy7cKeqKu0eMsRWxqyVbNgHaH5?pid=ImgDet&rs=1'"> Next image </button>
+</section id = "container">
+<section>
+    <h2>Introduction</h2>
+    <p>Tofu pudding is a popular Chinese dessert that consists of fresh, extra-soft uncurdled tofu with sweet syrup, often served with a ladle.</p>
+</section>
+
+<br>
+<hr>
+<br>
+
+<section>
+    <h2>Recipe</h2>
+    <p>Ingredients:</p>
+    <ul style = "list-style-type: circle">
+        <li>Glucono delta-lactone (GDL)</li>
+        <li>Soy milk</li>
+    </ul>
+    
+    <p>Instructions:</p>
+    <ol type = "1">
+        <li>Dissolve the GDL into a bowl with a small amount of soy milk</li>
+        <li>Pour in more soy milk and stir</li>
+        <li>Cover the bowl with plastic wrap and steam</li>
+    </ol>
+
+    <button type="button" onclick="changeBackground()" id = "dark">
+                    Dark Mode </button>
+    <button onclick="window.print()" id = "container">Print this page</button>
+</section>
+
+
+
+<script type = "text/javascript">
+    function changeBackground() {
+            document.getElementById("webpage").style.backgroundColor = 'black';
+    }
+</script>
+
+</body>
+
+<footer>
+    <i>Webpage by Colin Moy (Period 2)<br>3/10/2023</i>
+</footer>
+
+</html>
+
