@@ -1,0 +1,123 @@
+---------
+<!DOCTYPE html>    
+
+<!-- Step up the Page for HTML code --> 
+<html id = "webpage">
+
+<head> <!-- Display Name on Brower Tab --> 
+<style>
+    html { background-color : #9a0000 ; font-family: courier;
+        color: #C8BF00;
+    }
+    header {font-size: 150%; text-align: center;}
+    nav {
+        color: #FFFFFF;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+    a {
+        color: #FFFFFF;
+    }
+    h2 {font-size: 180%;}
+    img { border: 2px solid black; padding: 0px; text-align: center;
+        display: block; margin-left: auto; margin-right: auto;}
+    footer {
+        border: 1px solid;
+        width: 400px;
+        padding: 10px 20px;
+        background: #000000;
+        color: white;
+        margin:0 auto;
+        text-align: center;
+    }
+    hr {border-top: 2px solid #E7DC00;}
+    #container {
+    margin: auto;
+    text-align: center;
+    }
+    button {
+        margin: 10px;
+    	padding: 10px 20px;
+    	font-size: 12px;
+    	background-color: black;
+    	color: white;
+    	border: solid;
+    	border-radius: 10px;
+    	cursor: pointer;
+    }
+    button:hover {
+        background-color: #06009a;
+    }
+    footer {
+        margin-top: 200px;
+    }
+</style>
+<title> Tofu Pudding  </title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>  <!-- Display on Webpage -->
+<header>
+    <h1>Tofu Pudding</h1>
+</header>
+
+<nav>
+    <p>
+        <a href = "https://website-6339747.codehs.me/mainpage.html" class = "link"
+            onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)">Home</a> |
+    
+        <a href = "https://website-6339747.codehs.me/tangyuan.html" class = "link"
+            onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)">Tangyuan</a>
+    </p>
+</nav>
+
+<section id = "container">
+    <img src = "https://www.pressurecookrecipes.com/wp-content/uploads/2018/04/instant-pot-tofu-pudding-recipe-1.jpg" id = 'myImage' height = "240">
+    <button onclick="document.getElementById('myImage').src='https://www.pressurecookrecipes.com/wp-content/uploads/2018/04/instant-pot-tofu-pudding-recipe-1.jpg'"> Previous image  </button>
+    <button onclick="document.getElementById('myImage').src='https://th.bing.com/th/id/OIP.hy7cKeqKu0eMsRWxqyVbNgHaH5?pid=ImgDet&rs=1'"> Next image </button>
+</section id = "container">
+<section>
+    <h2>Introduction</h2>
+    <p>Tofu pudding is a popular Chinese dessert that consists of fresh, extra-soft uncurdled tofu with sweet syrup, often served with a ladle.</p>
+</section>
+
+<br>
+<hr>
+<br>
+
+<section>
+    <h2>Recipe</h2>
+    <p>Ingredients:</p>
+    <ul style = "list-style-type: circle">
+        <li>Glucono delta-lactone (GDL)</li>
+        <li>Soy milk</li>
+    </ul>
+    
+    <p>Instructions:</p>
+    <ol type = "1">
+        <li>Dissolve the GDL into a bowl with a small amount of soy milk</li>
+        <li>Pour in more soy milk and stir</li>
+        <li>Cover the bowl with plastic wrap and steam</li>
+    </ol>
+
+    <button type="button" onclick="changeBackground()" id = "dark">
+                    Dark Mode </button>
+    <button onclick="window.print()" id = "container">Print this page</button>
+</section>
+
+
+
+<script type = "text/javascript">
+    function changeBackground() {
+            document.getElementById("webpage").style.backgroundColor = 'black';
+    }
+</script>
+
+</body>
+
+<footer>
+    <i>Webpage by Colin Moy (Period 2)<br>3/10/2023</i>
+</footer>
+
+</html>

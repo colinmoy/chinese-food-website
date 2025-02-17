@@ -1,0 +1,189 @@
+-------------
+<!DOCTYPE html>    
+
+<!-- Step up the Page for HTML code --> 
+<html>
+    <head>   <!-- Display Name on Brower Tab --> 
+        <title> APCSP Site </title>
+        <style>
+            html {
+                background-color: #9a0000;
+                color: #C8BF00;
+            }
+            header {
+                font-size: 35px;
+            }
+            .header {
+                background-color: #750000;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            nav {
+                font-size: 15px;
+            }
+            #left {
+                float: left;
+                width: 45%;
+                max-width: 400px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            #right {
+                float: left;
+                width: 45%;
+                max-width: 400px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            #img {
+                max-width: 100%;
+                border: 2px solid #000;
+            }
+            .footer {
+                color: #FFFFFF;
+                background-color: #750000;
+                text-align: center;
+                padding: 10px;
+                margin: 20px;
+            }
+            row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            div {
+                padding-top: 40px;
+                padding-right: 20px;
+                padding-bottom: 40px;
+                padding-left: 20px;
+            }
+            .info {
+                border: 3px solid #C8BF00;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            body {
+                font-family: "Monaco", monospace;
+            }
+            .link {
+                color: #FFFFFF;
+            }
+        </style>
+    </head>
+
+
+    <body>  <!-- Display on Webpage -->
+        <br>
+        <div>
+            <header class = "header">
+                <h2> Tangyuan </h2>
+            </header>
+            <br>
+            <nav class = "header">
+                <p>
+                    <a href = "https://website-6339747.codehs.me/mainpage.html" class = "link"
+                        onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)">Home</a> |
+                
+                    <a href = "https://website-6339747.codehs.me/tofu.html" class = "link"
+                        onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)">Tofu Pudding</a>
+                </p>
+                
+                
+                
+            </nav>
+            <p></p>
+            <hr>
+            <br>
+            <section>
+                <row>
+                    <section id = "left">
+                        <a href = "https://en.wikipedia.org/wiki/Tangyuan_(food)">
+                            <img src = "https://upload.wikimedia.org/wikipedia/commons/3/34/Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg"
+                                    onmouseover = "mOverImg(this)" onmouseout = "mOutImg(this)" id = "img">
+                        </a>
+                    </section>
+                    <section id = "right">
+                        <h3>
+                            Description
+                        </h3>
+                        <p>
+                            Tangyuan is a traditional Chinese dessert made of glutinous rice that is shaped into a ball and commonly served in hot broth or syrup.
+                            Sometimes, it is also filled with filling such as sesame, peanut, and sometimes even fruit. 
+                            Tangyuan is traditionally served during the Lantern Festival because its name is a homophone for the Chinese word of union.
+                        </p>
+                    </section>
+                </row>
+            </section>
+        
+            <br>
+            <hr>
+            <br>
+            <section class = "info">
+                <h3>
+                    Ingredients
+                </h3>
+                <ul>
+                    <li> <p> Glutinous sweet rice flour </p> </li>
+                    <li> <p> Sugar </p> </li>
+                    <li> <p> Butter </p> </li>
+                    <li> <p> Fillings (like sesame or peanut) </p> </li>
+                </ul>
+                <br>
+                <h3>
+                    Instructions (for sesame Tangyuan)
+                </h3>
+                <ol>
+                    <li> <p> Grind sesame seeds, then add sugar and butter to it to create a paste </p> </li>
+                    <li> <p> Stir the sweet rice flour in a bowl while slowly adding warm water </p> </li>
+                    <li> <p> Take 18 grams of dough, flatten it, and put 4 grams of of the paste in the middle. </p> </li>
+                    <li> <p> Close the dough with the filling inside, then roll it into a ball. </p></li>
+                </ol>
+                <button onclick = "window.print()">
+                    Print This Page
+                </button>
+            </section>
+            <section class = "footer">
+                <h2> Sources </h2>
+                <p> <a href = "https://en.wikipedia.org/wiki/Tangyuan_(food)"
+                        onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)"
+                        class = "link">
+                    Tangyuan (Wikipedia)
+                </a> <br> <a href = "https://thewoksoflife.com/tang-yuan-recipe/"
+                        onmouseover = "mOverLink(this)" onmouseout = "mOutLink(this)"
+                        class = "link">
+                    Tang Yuan (The Woks of Life)
+                </a> </p>
+            </section>
+            <footer class = "footer">
+                <p>
+                    Jake Chen <br>
+                    Period 8 <br>
+                    3/10/23
+                </p>
+            </footer>
+        </div>
+        <br>
+    </body>
+    <script type = "text/javascript">
+        function mOverLink(obj){ 
+            obj.style.background = "darkviolet"; 
+             
+        }
+        function mOutLink(obj){
+            obj.style.background = "#750000";
+            
+        }
+        function mOverImg(obj){ 
+            obj.style.borderRadius = "3px"; 
+            obj.style.border = "3px solid #000";
+        }
+        function mOutImg(obj){
+            obj.style.borderRadius = "1px";
+            obj.style.border = "2px solid #000";
+            
+        }
+    </script>
+</html>
